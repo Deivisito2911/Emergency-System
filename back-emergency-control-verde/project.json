@@ -1,0 +1,25 @@
+{
+  "name": "back-emergency-control-verde",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "back-emergency-control-verde/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "back-emergency-control-verde:build",
+        "runtimeArgs": ["--experimental-loader=newrelic/esm-loader.mjs"]
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "back-emergency-control-verde:build:development"
+        },
+        "production": {
+          "buildTarget": "back-emergency-control-verde:build:production"
+        }
+      }
+    }
+  }
+}

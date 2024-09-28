@@ -1,0 +1,24 @@
+{
+  "name": "emergency-auth",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "emergency-auth/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "emergency-auth:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "emergency-auth:build:development"
+        },
+        "production": {
+          "buildTarget": "emergency-auth:build:production"
+        }
+      }
+    }
+  }
+}

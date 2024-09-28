@@ -1,0 +1,16 @@
+{
+  "name": "emergency-login",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "emergency-login/src",
+  "projectType": "application",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project emergency-login --web",
+  "targets": {
+    "serve":{
+      "options": {
+        "cwd": "emergency-login",
+        "port": 4215
+      }
+    }
+  }
+}

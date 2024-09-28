@@ -1,0 +1,32 @@
+<div class='incidencia'>
+  <h2>Incidencia</h2>
+
+  <p><b>Código:</b> {{codigo}}</p>
+  <p><b>Fecha:</b> {{fecha}}</p>
+  <p><b>Tipo:</b> {{tipo}}</p>
+  <p><b>Lugar:</b> {{lugar}}</p>
+  <p><b>Cantidad afectados:</b> {{cantidad_afectados}}</p>
+  <p><b>Descripción:</b> {{descripcion}}</p>
+
+  <h3>Afectados</h3>
+  {{#if afectados}}
+    <ul class='afectados'>
+      {{#each afectados}}
+        <li>{{nombre}}</li>
+      {{/each}}
+    </ul>
+  {{else}}
+    <p>No hay afectados asociado.</p>
+  {{/if}}
+
+  <h3>Denunciante</h3>
+  <div class='denunciante'>
+    {{#if denunciante}}
+      <p><b>Nombre:</b> {{denunciante.nombre}}</p>
+      <p><b>Cédula:</b> {{denunciante.cedula}}</p>
+      <p><b>Teléfono:</b> {{denunciante.telefono}}</p>
+    {{else}}
+      <p>No hay denunciante asociado.</p>
+    {{/if}}
+  </div>
+</div>

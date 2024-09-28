@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+    --background-nav: #1C67AD;
+    --color-text-nav: #fff;
+    --background-body: #F2F7FD;
+    --color-text-main: #000000;
+    --background-button: #2B83CC;
+    --background-container-form: #fff;
+
+}
+
+
+*{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    color: var(--background-body);
+}
+
+
+
+label, h1,p{
+    color: var(--color-text-main);
+}
+
+p{
+    font-weight: bolder;
+}
+
+.container-form{
+    background-color: var(--background-container-form);
+    width: 95%;
+    height: auto;
+    border-radius: 13px;
+    box-shadow: -1px 10px 38px -2px rgba(0,0,0,0.25);
+}
+
+form{
+    padding: 1rem 4rem;
+}
+
+.text-title-user{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3%;
+}
+
+.text-title-user .text{
+    margin-right: 5%;
+}
+
+.text-user p{
+    margin-right: 2.5rem;
+}
+
+.title .afectadosh1{
+    margin-top: 5%;
+}
+
+.row{
+    display: flex;
+    gap: 5rem;
+    
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.5rem;
+}
+
+.input input, textarea, select{
+    border-radius: 5px;
+
+}
+
+
+.input label{
+    padding-bottom: 1rem;
+}
+
+.input input, select{
+    height: 2.5rem;
+    width: 20vw;
+    border: none;
+    box-shadow: -1px 10px 38px -2px rgba(0,0,0,0.25);
+}
+
+select{
+    height: 2.5rem;
+}
+
+textarea{
+    box-shadow: -1px 10px 38px -2px rgba(0,0,0,0.25);
+    border: none;
+    width: 30rem;
+    height: 7rem;
+}
+
+.container{
+    margin: 5% 0 0 3.4rem;
+}
+
+.add-icon-container{
+    margin-top: 5%;
+    display: flex;
+    justify-content: flex-end;
+} 
+
+.add-icon-container .add-icon img{
+    width: 2rem;
+    height: 2rem;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+
+}
+
+.button button{
+    border-radius: 6px;
+    width: 30%;
+    height: 2.5rem;
+    background-color: var(--background-button);
+    border:none;
+    cursor: pointer;
+}
+
+.button span{
+    color: var(--color-text-nav);
+    font-weight: bolder;
+    font-size: 1rem;
+}

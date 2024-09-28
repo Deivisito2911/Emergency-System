@@ -1,0 +1,141 @@
+.header {
+    display: flex;
+    height: 72px;
+    padding: 0 16px;
+    background-color: #fff;
+    border-bottom: 1px solid $separador-Secciones;
+    position: relative;
+    z-index: 10;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.navbar {
+    margin: 0 2rem;
+    transition: all 0.5s ease 0s;
+
+    .navbar-nav {
+        display: flex;
+        gap: 1.5rem;
+        margin-right: auto;
+    }
+
+    .nav-item {
+        .nav-link {
+            color: $header-font-color;
+            border-radius: 8px;
+            padding: 7px 24px;
+        }
+
+        .nav-link[aria-current="page"] {
+            color: #fff;
+            background-color: $primary-color;
+        }
+
+        .nav-link:hover {
+            color: #000;
+        }
+    }
+}
+
+.navbar-logo {
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.navbar-button {
+    margin-right: 10px;
+    border-color: #fff;
+    background-color: #fff;
+
+    &:hover {
+        border-color: #fff;
+        background-color: #fff;
+    }
+}
+
+.navbar-icons {
+    margin: 0 .5rem;
+}
+
+.navbar-profile {
+    margin-left: 2.5rem;
+}
+
+.navbar-mobile {
+    display: none;
+
+    .hamburger {
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 8px;
+        outline: none;
+    }
+
+    .navbar-nav {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+        top: 72px;
+        right: 0;
+        max-height: 0;
+        max-width: 300px;
+        background-color: #fff;
+        overflow: hidden;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        transition: max-height 0.3s ease-in-out;
+    }
+
+    .navbar-nav.open {
+        max-height: 300px;
+    }
+
+    .nav-item {
+        width: 100%;
+        text-align: right;
+        padding: 8px 16px;
+
+        .nav-link {
+            padding: 8px 12px;
+            color: $header-font-color;
+            border-radius: 4px;
+        }
+
+        .nav-link[aria-current="page"] {
+            color: #fff;
+            background-color: $primary-color;
+        }
+
+        .nav-link:hover {
+            color: #000;
+            background-color: #a4a4a434;
+        }
+    }
+}
+
+/* Responsive media queries */
+@media screen and (max-width: 991px) {
+    .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin: auto;
+    }
+
+    .main-menu {
+        display: none;
+    }
+
+    .navbar-mobile {
+        display: flex;
+        align-items: center;
+    }
+}

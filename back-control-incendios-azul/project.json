@@ -1,0 +1,24 @@
+{
+  "name": "back-control-incendios-azul",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "back-control-incendios-azul/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "back-control-incendios-azul:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "back-control-incendios-azul:build:development"
+        },
+        "production": {
+          "buildTarget": "back-control-incendios-azul:build:production"
+        }
+      }
+    }
+  }
+}

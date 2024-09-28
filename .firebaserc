@@ -1,0 +1,28 @@
+{
+  "projects": {
+    "default": "emergenciasudoapp"
+  },
+  "targets": {
+    "emergenciasudoapp": {
+      "hosting": {
+        "authudone": [
+          "authudone"
+        ],
+        "landingapp": [
+          "udone-emgency-apps"
+        ],
+        "equipo-verde": [
+          "antecion911udone"
+        ],
+        "equipo-rojo": [
+          "antencionaltamarudone"
+        ],
+        "equipo-azul": [
+          "atencionincendiosudone"
+        ]
+      }
+    }
+  },
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}

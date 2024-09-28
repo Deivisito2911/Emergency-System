@@ -1,0 +1,68 @@
+.alerta-form {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+  
+    .card {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Centra todo el contenido horizontalmente */
+      
+      .card-body {
+        padding: 20px;
+        width: 100%; /* Asegura que el contenido ocupe el ancho completo del card */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra todo el contenido dentro del card-body */
+  
+        .card-title {
+          font-size: 1.5rem;
+          font-weight: bold;
+          margin-bottom: 20px;
+          text-align: center; /* Centra el título */
+        }
+  
+        .danger-icon-link {
+          display: flex;
+          justify-content: center; /* Centra el icono horizontalmente */
+          margin-bottom: 20px; /* Espacio debajo del icono */
+        }
+  
+        .danger-icon {
+          width: 30px; /* Tamaño reducido del icono */
+          height: auto; /* Mantiene la proporción del icono */
+        }
+  
+        .form-floating {
+          width: 100%; /* Asegura que el contenedor de los inputs ocupe el ancho completo */
+          margin-bottom: 15px; /* Espaciado entre los campos de entrada */
+          display: flex;
+          flex-direction: column;
+          align-items: center; /* Centra los inputs dentro del contenedor */
+        }
+  
+        .form-select, .form-control {
+          width: 100%; /* Hace que los inputs ocupen todo el ancho disponible */
+          max-width: 500px; /* Limita el ancho máximo de los inputs para que no se estiren demasiado */
+          margin-bottom: 15px; /* Espaciado entre los campos de entrada */
+        }
+  
+        .alert-container {
+          margin-bottom: 20px;
+        }
+  
+        #submit-button {
+          width: 100%;
+          max-width: 500px; /* Limita el ancho máximo del botón para que no se estire demasiado */
+        }
+  
+        .label {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  

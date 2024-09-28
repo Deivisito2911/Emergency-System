@@ -1,0 +1,50 @@
+.cont-table {
+    background-color: #fff;
+    margin: 10% 4% 0% 4%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 1rem;
+  
+    .input-table {
+      margin-bottom: 1rem;
+    }
+  
+    .dataTable {
+      .rdt_TableHeadRow {
+        background-color: #f7f7f7;
+        font-size: 12px; /* Reducir el tamaño de fuente de los encabezados */
+        font-weight: bold;
+      }
+  
+      .rdt_TableRow {
+        min-height: 72px;
+        transition: background-color 0.3s ease;
+  
+        &:nth-child(even) {
+          background-color: #e9f4fd; /* Color azul claro */
+        }
+  
+        &:nth-child(odd) {
+          background-color: #ffffff; /* Color blanco */
+        }
+  
+        &:hover {
+          background-color: #e0e0e0; /* Color de fondo al pasar el cursor */
+        }
+      }
+  
+      .rdt_TableCell {
+        padding-left: 8px;
+        padding-right: 8px;
+      }
+    }
+  }
+  
+  .inputTable {
+    border-radius: 0.5rem;
+    padding-left: 1rem;
+    margin: 1.2rem 0 1rem 1.5rem;
+    border: 1px solid #ccc;
+    width: 300px;
+    font-size: 16px;
+  }

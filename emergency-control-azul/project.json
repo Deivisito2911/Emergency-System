@@ -1,0 +1,9 @@
+{
+  "name": "emergency-control-azul",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "emergency-control-azul/src",
+  "projectType": "application",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project emergency-control-azul --web",
+  "targets": {}
+}

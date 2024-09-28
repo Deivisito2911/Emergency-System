@@ -1,0 +1,24 @@
+{
+    "tipoIncidencia": [
+        { "value": "Naufragio", "label": "Naufragio" },
+        { "value": "Incendio", "label": "Incendio" }
+    ],
+    "tipoSangre": [
+        { "value": "A+", "label": "A+" },
+        { "value": "AB+", "label": "AB+" },
+        { "value": "B+", "label": "B+" },
+        { "value": "O+", "label": "O+" },
+        { "value": "A-", "label": "A-" },
+        { "value": "AB-", "label": "AB-" },
+        { "value": "B-", "label": "B-" },
+        { "value": "O-", "label": "O-" }
+    ],
+    "sexo": [
+        { "value": "F", "label": "F" },
+        { "value": "M", "label": "M" }
+    ],
+    "EstadoDelAfectado": [
+        { "value": "fallecido", "label": "Fallecido" },
+        { "value": "vivo", "label": "Vivo" }
+    ]
+}

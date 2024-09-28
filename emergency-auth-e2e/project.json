@@ -1,0 +1,17 @@
+{
+  "name": "emergency-auth-e2e",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "implicitDependencies": ["emergency-auth"],
+  "targets": {
+    "e2e": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{e2eProjectRoot}"],
+      "options": {
+        "jestConfig": "emergency-auth-e2e/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "dependsOn": ["emergency-auth:build"]
+    }
+  }
+}

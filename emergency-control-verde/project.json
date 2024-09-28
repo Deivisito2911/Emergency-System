@@ -1,0 +1,9 @@
+{
+  "name": "emergency-control-verde",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "emergency-control-verde/src",
+  "projectType": "application",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project emergency-control-verde --web",
+  "targets": {}
+}

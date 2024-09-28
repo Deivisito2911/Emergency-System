@@ -1,0 +1,111 @@
+* {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    transition: all 0.5s ease 0s;
+}
+
+.section {
+    margin: 50px 0;
+}
+
+.card {
+    border-color: $cardborder-Color;
+    box-shadow: 0 8px 8px -4px rgba(18, 27, 45, 0.05);
+}
+
+/* Form Styles */
+
+label {
+    font-size: 14px;
+    color: $label-color;
+}
+
+input {
+    &::placeholder {
+        font-size: 14px;
+    }
+
+    &:read-only {
+        background-color: #e9ecef;
+        opacity: 1;
+        pointer-events: none;
+    }
+
+    &[type="checkbox"] {
+        pointer-events: auto;
+    }
+}
+
+.form-container {
+    margin: 32px 32px;
+}
+
+.form-control {
+    width: 320px;
+    padding: 12px 16px;
+    color: $inputtext-color;
+    border: 1px solid $inputborder-Color;
+    border-radius: 8px;
+    margin-top: 2px;
+}
+
+.form-select {
+    width: 320px;
+    padding: 12px 16px;
+    border: 1px solid $inputborder-Color;
+    color: $inputtext-color;
+    border-radius: 8px;
+    margin-top: 2px;
+    font-size: 14px;
+}
+
+/* Tables */
+
+.table th {
+    padding: 12px 24px;
+}
+
+.table td {
+    padding: 24px 24px;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+    --bs-table-bg-type: #FBFBFB; 
+}
+
+tbody, td, tfoot, th, thead, tr {
+    border-color: #EAECF0;
+}
+
+/* Buttons */
+
+.btn-form {
+    border-radius: 8px;
+    padding: 7px 24px;
+}
+
+.btn-primary {
+    background-color: $primary-color;
+    color: #fff;
+}
+
+.btn-light {
+    background-color: #FFF;
+    color: #656565;
+    border: 2px solid #D0D5DD;
+    font-weight: 500;
+}
+
+//Icons
+
+.iconos-tabla {
+    width: 24px;
+    stroke: $primary-color;
+}
+
+@media screen and (max-width: 991px) {
+    .form-container {
+        margin: 8px 0;
+    }
+}

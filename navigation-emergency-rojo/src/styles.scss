@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  background: #ceefff;
+  transition: 0.5s;
+}
+
+.container.dark {
+  background: #222;
+}
+
+.footer {
+  text-align: center;
+  font-weight: bold;
+  font-size: 12px;
+  color: rgb(110, 14, 14);
+  background-color: rgb(255, 167, 167);
+}

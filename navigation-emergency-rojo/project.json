@@ -1,0 +1,9 @@
+{
+  "name": "navigation-emergency-rojo",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "navigation-emergency-rojo/src",
+  "projectType": "application",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project navigation-emergency-rojo --web",
+  "targets": {}
+}

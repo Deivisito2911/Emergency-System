@@ -1,0 +1,17 @@
+/* Base */
+@import 'scss/base/variables';
+@import 'scss/base/typography';
+@import 'scss/base/global';
+
+/* Layouts */
+@import 'scss/layout/header';
+@import 'scss/layout/footer';
+@import 'scss/layout/tabla-reportes';
+
+/* Pages */
+@import 'scss/pages/reporte-incendio';
+
+@import 'scss/shortcode.scss';
+
+/* Frameworks, Vendors */
+@import 'bootstrap/dist/css/bootstrap.min.css';

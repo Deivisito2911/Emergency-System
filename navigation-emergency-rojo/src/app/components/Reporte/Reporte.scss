@@ -1,0 +1,78 @@
+.reporte-form {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+    .reporte-card {
+      border: none;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+  
+    .reporte-card-body {
+      padding: 2rem;
+    }
+  
+    .reporte-card-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+  
+    .reporte-form-control,
+    .reporte-form-select {
+      height: calc(3.5rem + 2px);
+      padding: 1rem;
+      font-size: 1rem;
+      border: 1px solid #ced4da;
+      border-radius: 0.7rem;
+      margin-bottom: 2rem; // Incrementa el espaciado inferior entre los campos
+      width: 100%; // Asegura que el input/select use todo el ancho disponible
+      border: 2px solid #ccc;
+    }
+  
+    .reporte-submit-button {
+      display: block;
+      width: 30%; // Asegura que el botón use todo el ancho disponible
+      padding: 0.75rem;
+      font-size: 1rem;
+      font-weight: bold;
+      background: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 0.25rem;
+      transition: background 0.3s;
+      margin-top: 1rem; // Espaciado superior para separar el botón del resto del contenido
+  
+      &:hover {
+        background: #0056b3;
+      }
+    }
+  
+    .reporte-alert-container {
+      margin-bottom: 1.5rem;
+    }
+  
+    .reporte-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem; // Incrementa el espacio entre columnas
+  
+      .reporte-col-md-6 {
+        flex: 0 0 calc(50% - 1rem); // Ajusta el ancho de la columna para dejar espacio entre ellas
+        padding: 0 1rem; // Espaciado lateral dentro de la columna
+      }
+  
+      .label {
+        font-weight: bold;
+      }
+  
+      .formSelectTipoEmergencia {
+        border: 2px solid #ccc;
+      }
+    }
+  }

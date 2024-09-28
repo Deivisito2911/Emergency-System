@@ -1,0 +1,135 @@
+.register-form {
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 1300px; /* Ancho máximo */
+  margin: 40px auto;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.904
+  ); /* Fondo ligeramente transparente */
+}
+
+.register-form .card {
+  margin: auto;
+  border: none;
+  border-radius: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1200px;
+  outline: none;
+  box-shadow: none;
+}
+
+.register-form .card-body {
+  padding: 30px;
+  width: 70%; /* Amplía el ancho de la card-body */
+  margin: auto; /* Centra la card-body horizontalmente */
+}
+
+.register-form .form-control {
+  padding: 15px;
+  border-radius: 10px;
+  height: 55px;
+  font-size: 1rem;
+  background-color: #ffffff;
+  margin-bottom: 20px; /* Espacio vertical entre los inputs */
+  box-shadow: inset 2px 2px 5px rgba(3, 19, 165, 0.1); /* Sombra suave hacia adentro */
+  border: 2px solid #ccc; /* Borde sólido */
+}
+
+.register-form .form-control:focus {
+  border-color: #4a90e2; /* Cambia el color del borde cuando el input está enfocado */
+  box-shadow: 0 0 10px rgba(74, 144, 226, 0.5); /* Agrega una sombra alrededor del input */
+  outline: none; /* Elimina el borde de enfoque predeterminado del navegador */
+}
+
+.register-form .row > .col-md-6 {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.register-form .btn {
+  padding: 5px 15px; /* Ajusta el padding para reducir más el ancho del botón */
+  background-color: #5ca3ff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.register-form .btn:hover {
+  background-color: #4a90e2;
+}
+
+/* Estilos para el select personalizado */
+.select-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.select-container select {
+  width: 100%;
+  height: 45px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid white;
+  background-color: #ffffff;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url('https://image.flaticon.com/icons/svg/25/25231.svg'); /* Icono de flecha */
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  box-shadow: 2px 2px 5px rgba(3, 19, 165, 0.3);
+  font-size: 1rem;
+}
+
+.select-container::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+  pointer-events: none;
+}
+
+.register-form .form-group {
+  margin-bottom: 20px; /* Espacio entre grupos de formulario */
+}
+
+.register-form .form-group label {
+  font-weight: bold; /* Aplica negrita a los labels */
+  font-size: 1rem; /* Asegúrate de que el tamaño de fuente sea adecuado */
+  color: #333; /* Color para mayor contraste */
+}
+
+#submit-button {
+  display: block;
+  margin: 20px auto;
+  width: 250px; /* Ajusta automáticamente el ancho del botón */
+  height: 50px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.label {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+#formTipoEmbarcacion {
+  border: 2px solid #ccc;
+}
+
+#formTipoMaterial {
+  border: 2px solid #ccc;
+}

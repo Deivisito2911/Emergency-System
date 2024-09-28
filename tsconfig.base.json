@@ -1,0 +1,28 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@emgencias-udo/auth": ["libs/shared-auth/src/index.ts"],
+      "@emgencias-udo/lib/emergency-maps": [
+        "libs/lib/emergency-maps/src/index.ts"
+      ],
+      "@emgencias-udo/lib/shared-react-auth": [
+        "libs/lib/shared-react-auth/src/index.ts"
+      ]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
